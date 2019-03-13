@@ -16,7 +16,7 @@ public class FizzRule extends GameRule {
 
     @Override
     public boolean match(int number) {
-        return number%3 == 0 ;
+        return number%3 == 0 || String.valueOf(number).contains("3");
     }
 
     @Override

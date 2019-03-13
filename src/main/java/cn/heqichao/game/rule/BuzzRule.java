@@ -15,7 +15,7 @@ public class BuzzRule extends GameRule {
 
     @Override
     public boolean match(int number) {
-        return number % 5 == 0;
+        return number % 5 == 0 || String.valueOf(number).contains("5");
     }
 
     @Override
